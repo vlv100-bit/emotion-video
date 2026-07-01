@@ -3,10 +3,9 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Эмоциональное видео</title>
+  <title>Леонид Волков — Эмоциональное видео</title>
   <link rel="stylesheet" href="style.css" />
   <style>
-    /* Базовые стили */
     body {
       margin: 0;
       font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
@@ -26,7 +25,6 @@
       text-align: center;
     }
 
-    /* Стили для кнопок */
     .btn-inline {
       display: inline-block;
       padding: 16px 32px;
@@ -56,7 +54,6 @@
       background-color: #e2e8f0;
     }
 
-    /* Сетка карточек портфолио */
     .portfolio-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -70,13 +67,11 @@
       background: #ffffff;
     }
 
-    /* Блок CTA (кнопки призыва к действию) */
     .cta-block {
       margin-top: 40px;
       text-align: center;
     }
 
-    /* Стили специально под секцию «Тарифы» как на скриншоте */
     .pricing-wrapper {
       text-align: center;
       padding: 80px 20px;
@@ -87,8 +82,13 @@
       font-size: 20px;
       border-radius: 12px;
     }
+    .pricing-subtitle {
+      margin-top: 24px;
+      font-size: 18px;
+      color: #64748b;
+      font-weight: 400;
+    }
 
-    /* Стили списка услуг */
     .services-list {
       list-style: none;
       padding: 0;
@@ -114,7 +114,8 @@
         <img src="logo.png" alt="Логотип Эмоциональное видео" class="logo" />
       </a>
       <h1 class="hero-title">Леонид Волков</h1>
-      <p class="hero-subtitle">Персонализированные эмоциональные видеоролики</p>
+      <p class="hero-subtitle">Персонализированные видеоролики с нейросетями и профессиональным монтажом</p>
+      <!-- Рабочая ссылка на форму заказа -->
       <a href="https://emotion-vid-form.vercel.app/" target="_blank" rel="noopener noreferrer" class="btn-inline">Заказать видеоролик</a>
     </div>
   </header>
@@ -134,6 +135,7 @@
         <li>Пишу стихи, создаю музыку и превращаю идеи в уникальные видеоролики.</li>
       </ul>
       <div class="cta-block">
+        <!-- Рабочая ссылка на форму заказа -->
         <a href="https://emotion-vid-form.vercel.app/" target="_blank" rel="noopener noreferrer" class="btn-inline">Заказать видеоролик</a>
       </div>
     </section>
@@ -157,21 +159,22 @@
           <a href="https://disk.yandex.ru/i/h8XkoGeru8q1Rg" target="_blank" rel="noopener noreferrer" class="btn-inline secondary">Смотреть пример</a>
         </article>
       </div>
-      <!-- Кнопка «Перейти к тарифам» удалена по вашему запросу -->
+
+      <div class="cta-block">
+        <a href="#pricing" class="btn-inline">Перейти к тарифам</a>
+      </div>
     </section>
 
     <section id="pricing" class="pricing-wrapper">
-      <!-- Только одна кнопка «Тарифы» как на скриншоте -->
       <a href="https://disk.yandex.ru/i/L6-0BLLnjl2rQQ" target="_blank" rel="noopener noreferrer" class="btn-inline">Тарифы</a>
+      <p class="pricing-subtitle">AI‑ролики и видеомонтаж</p>
     </section>
   </main>
 
   <footer>
     <div class="container">
       <p>Леонид Волков — AI‑ролики и видеомонтаж</p>
-      
     </div>
   </footer>
 </body>
 </html>
-
