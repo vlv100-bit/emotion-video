@@ -1,1 +1,392 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>FAQ — Леонид Волков | AI‑ролики и видеомонтаж</title>
+  <style>
+    :root {
+      --primary: #2563eb;
+      --primary-hover: #1d4ed8;
+      --bg: #ffffff;
+      --text: #1e293b;
+      --text-secondary: #64748b;
+      --border: #e2e8f0;
+      --container-max-width: 800px;
+    }
+
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+      color: var(--text);
+      background-color: var(--bg);
+      line-height: 1.6;
+    }
+
+    .container {
+      max-width: var(--container-max-width);
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    header {
+      padding: 60px 0 40px;
+      text-align: center;
+    }
+
+    h1 {
+      margin: 0 0 12px;
+      font-size: 32px;
+      color: var(--text);
+    }
+
+    .subtitle {
+      margin: 0;
+      color: var(--text-secondary);
+      font-size: 18px;
+    }
+
+    .faq-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .faq-item {
+      border-bottom: 1px solid var(--border);
+    }
+
+    .faq-question {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 24px 0;
+      cursor: pointer;
+      font-weight: 600;
+      color: var(--text);
+      transition: color 0.2s;
+    }
+
+    .faq-question:hover {
+      color: var(--primary);
+    }
+
+    .faq-icon {
+      font-size: 20px;
+      color: var(--text-secondary);
+      transition: transform 0.3s ease;
+    }
+
+    .faq-item.open .faq-icon {
+      transform: rotate(180deg);
+    }
+
+    .faq-answer {
+      max-height: 0;
+      overflow: hidden;
+      opacity: 0;
+      transition: max-height 0.3s ease, opacity 0.3s ease;
+      padding-bottom: 0;
+    }
+
+    .faq-item.open .faq-answer {
+      max-height: 1000px;
+      opacity: 1;
+      padding-bottom: 24px;
+    }
+
+    .faq-answer p {
+      margin: 0 0 12px;
+      color: var(--text);
+    }
+
+    .faq-answer ul {
+      margin: 0 0 12px;
+      padding-left: 20px;
+    }
+
+    .faq-answer li {
+      margin-bottom: 6px;
+    }
+
+    .cta-block {
+      margin-top: 60px;
+      text-align: center;
+    }
+
+    .btn-inline {
+      display: inline-block;
+      padding: 16px 32px;
+      background-color: var(--primary);
+      color: #ffffff !important;
+      text-decoration: none;
+      border-radius: 12px;
+      font-weight: 600;
+      box-shadow: 0 4px 14px rgba(37, 99, 235, 0.25);
+      transition: all 0.3s ease;
+      font-size: 18px;
+    }
+
+    .btn-inline:hover {
+      background-color: var(--primary-hover);
+      transform: translateY(-2px);
+      box-shadow: 0 8px 20px rgba(37, 99, 235, 0.3);
+    }
+
+    footer {
+      padding: 60px 0 40px;
+      text-align: center;
+      color: var(--text-secondary);
+      border-top: 1px solid var(--border);
+    }
+
+    @media (max-width: 600px) {
+      h1 { font-size: 28px; }
+      .faq-question { padding: 16px 0; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>Часто задаваемые вопросы</h1>
+      <p class="subtitle">Всё, что нужно знать перед заказом видеоролика</p>
+    </div>
+  </header>
+
+  <main class="container">
+    <ul class="faq-list">
+      <!-- Вопрос 1 -->
+      <li class="faq-item">
+        <div class="faq-question">
+          <span>Какие видеоролики вы создаёте?</span>
+          <span class="faq-icon">▼</span>
+        </div>
+        <div class="faq-answer">
+          <p>Я создаю персонализированные видеоролики различных форматов:</p>
+          <ul>
+            <li>поздравительные ролики;</li>
+            <li>эмоциональные истории;</li>
+            <li>музыкальные клипы;</li>
+            <li>липсинк (синхронизация движения губ с речью или песней);</li>
+            <li>оживление фотографий;</li>
+            <li>ролики с анимацией и визуальными эффектами;</li>
+            <li>видео с использованием современных нейросетей.</li>
+          </ul>
+        </div>
+      </li>
+
+      <!-- Вопрос 2 -->
+      <li class="faq-item">
+        <div class="faq-question">
+          <span>Что нужно для заказа?</span>
+          <span class="faq-icon">▼</span>
+        </div>
+        <div class="faq-answer">
+          <p>В зависимости от задачи могут потребоваться:</p>
+          <ul>
+            <li>фотографии;</li>
+            <li>видеозаписи;</li>
+            <li>текст поздравления или пожелания;</li>
+            <li>информация о человеке или событии;</li>
+            <li>музыкальные предпочтения;</li>
+            <li>примеры понравившихся роликов (при наличии).</li>
+          </ul>
+          <p>Если вы не знаете, что подготовить, я помогу определить необходимый набор материалов.</p>
+        </div>
+      </li>
+
+      <!-- Вопрос 3 -->
+      <li class="faq-item">
+        <div class="faq-question">
+          <span>За сколько дней лучше подавать заявку?</span>
+          <span class="faq-icon">▼</span>
+        </div>
+        <div class="faq-answer">
+          <p>Рекомендую подавать заявку минимум за 2 недели до события, которому будет посвящён ролик.</p>
+          <p>Это позволяет спокойно согласовать идею, собрать материалы и качественно выполнить работу.</p>
+        </div>
+      </li>
+
+      <!-- Вопрос 4 -->
+      <li class="faq-item">
+        <div class="faq-question">
+          <span>Можно ли заказать срочный ролик?</span>
+          <span class="faq-icon">▼</span>
+        </div>
+        <div class="faq-answer">
+          <p>Да, если у меня есть свободное время для выполнения заказа.</p>
+          <p>Возможность и стоимость срочного выполнения обсуждаются индивидуально.</p>
+        </div>
+      </li>
+
+      <!-- Вопрос 5 -->
+      <li class="faq-item">
+        <div class="faq-question">
+          <span>Сколько стоит ролик?</span>
+          <span class="faq-icon">▼</span>
+        </div>
+        <div class="faq-answer">
+          <p>Стоимость зависит от типа ролика, его длительности и сложности выполнения.</p>
+          <p>Актуальные тарифы размещены в закреплённом посте сообщества.</p>
+        </div>
+      </li>
+
+      <!-- Вопрос 6 -->
+      <li class="faq-item">
+        <div class="faq-question">
+          <span>Как рассчитывается стоимость?</span>
+          <span class="faq-icon">▼</span>
+        </div>
+        <div class="faq-answer">
+          <p>Стоимость рассчитывается исходя из длительности готового ролика или аудиофайла и действующего тарифа на выбранную услугу.</p>
+        </div>
+      </li>
+
+      <!-- Вопрос 7 -->
+      <li class="faq-item">
+        <div class="faq-question">
+          <span>Как происходит оплата заказа?</span>
+          <span class="faq-icon">▼</span>
+        </div>
+        <div class="faq-answer">
+          <p>Я работаю по системе постоплаты.</p>
+          <p>После завершения работы вы получаете готовый ролик (или ссылку на него) с водяными знаками для предварительного просмотра.</p>
+          <p>Если результат вас устраивает и замечаний нет, я сообщаю итоговую стоимость в соответствии с действующим тарифом и длительностью готового ролика (или аудиофайла, если выполнялась работа по созданию вокала и музыкального сопровождения).</p>
+          <p>Оплата производится через Систему быстрых платежей (СБП) по QR‑коду, который я отправляю вместе с суммой к оплате.</p>
+          <p>После поступления оплаты вы получаете ссылку на скачивание финальной версии без водяных знаков.</p>
+        </div>
+      </li>
+
+      <!-- Вопрос 8 -->
+      <li class="faq-item">
+        <div class="faq-question">
+          <span>Почему оплата производится после просмотра готового ролика?</span>
+          <span class="faq-icon">▼</span>
+        </div>
+        <div class="faq-answer">
+          <p>Мне важно, чтобы заказчик видел результат работы до оплаты и был уверен, что ролик соответствует его ожиданиям.</p>
+          <p>Поэтому сначала я предоставляю готовую версию для просмотра с водяными знаками, а после согласования и оплаты передаю финальный файл без водяных знаков.</p>
+        </div>
+      </li>
+
+      <!-- Вопрос 9 -->
+      <li class="faq-item">
+        <div class="faq-question">
+          <span>Можно ли внести правки в готовый ролик?</span>
+          <span class="faq-icon">▼</span>
+        </div>
+        <div class="faq-answer">
+          <p>Да.</p>
+          <p>После получения предварительной версии с водяными знаками вы можете сообщить свои замечания и пожелания.</p>
+          <p>Если правки соответствуют первоначальному техническому заданию, они будут внесены до передачи финальной версии.</p>
+        </div>
+      </li>
+
+      <!-- Вопрос 10 -->
+      <li class="faq-item">
+        <div class="faq-question">
+          <span>Что такое липсинк?</span>
+          <span class="faq-icon">▼</span>
+        </div>
+        <div class="faq-answer">
+          <p>Липсинк (Lip Sync) — это технология синхронизации движения губ персонажа с речью или песней.</p>
+          <p>В результате создаётся эффект, будто человек на фотографии или в видео действительно говорит или поёт.</p>
+        </div>
+      </li>
+
+      <!-- Вопрос 11 -->
+      <li class="faq-item">
+        <div class="faq-question">
+          <span>Можно ли оживить старую фотографию?</span>
+          <span class="faq-icon">▼</span>
+        </div>
+        <div class="faq-answer">
+          <p>Да.</p>
+          <p>С помощью современных технологий можно добавить движения, мимику, поворот головы, речь или музыкальное сопровождение, сохранив атмосферу оригинального снимка.</p>
+        </div>
+      </li>
+
+      <!-- Вопрос 12 -->
+      <li class="faq-item">
+        <div class="faq-question">
+          <span>Можно ли создать ролик по моим фотографиям и видео?</span>
+          <span class="faq-icon">▼</span>
+        </div>
+        <div class="faq-answer">
+          <p>Да.</p>
+          <p>Большинство персонализированных роликов создаётся именно на основе материалов, предоставленных заказчиком.</p>
+        </div>
+      </li>
+
+      <!-- Вопрос 13 -->
+      <li class="faq-item">
+        <div class="faq-question">
+          <span>Вы сами пишете сценарий, стихи и текст?</span>
+          <span class="faq-icon">▼</span>
+        </div>
+        <div class="faq-answer">
+          <p>Да.</p>
+          <p>При необходимости я могу помочь с разработкой идеи ролика, написанием сценария, стихов, текста поздравления и подбором музыкального сопровождения.</p>
+        </div>
+      </li>
+
+      <!-- Вопрос 14 -->
+      <li class="faq-item">
+        <div class="faq-question">
+          <span>В каком формате я получу готовую работу?</span>
+          <span class="faq-icon">▼</span>
+        </div>
+        <div class="faq-answer">
+          <p>Готовый ролик передаётся в цифровом формате, удобном для просмотра на смартфонах, компьютерах, телевизорах, а также для публикации в социальных сетях и мессенджерах.</p>
+        </div>
+      </li>
+
+      <!-- Вопрос 15 -->
+      <li class="faq-item">
+        <div class="faq-question">
+          <span>Как начать заказ?</span>
+          <span class="faq-icon">▼</span>
+        </div>
+        <div class="faq-answer">
+          <p>Напишите мне и расскажите:</p>
+          <ul>
+            <li>какому событию посвящён ролик;</li>
+            <li>для кого он создаётся;</li>
+            <li>какие эмоции вы хотите передать;</li>
+            <li>есть ли у вас материалы для работы.</li>
+          </ul>
+          <p>После этого мы обсудим идею, сроки и детали проекта.</p>
+        </div>
+      </li>
+    </ul>
+
+    <div class="cta-block">
+      <a href="https://emotion-vid-form.vercel.app/" target="_blank" rel="noopener noreferrer" class="btn-inline">Начать заказ</a>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>Леонид Волков — AI‑ролики и видеомонтаж</p>
+    </div>
+  </footer>
+
+  <script>
+    const items = document.querySelectorAll('.faq-item');
+
+    items.forEach(item => {
+      const question = item.querySelector('.faq-question');
+      question.addEventListener('click', () => {
+        // Закрываем все остальные
+        items.forEach(i => i.classList.remove('open'));
+        // Открываем текущий, если он не открыт
+        if (item !== document.querySelector('.faq-item.open')) {
+          item.classList.add('open');
+        }
+      });
+    });
+  </script>
+</body>
+</html>
 
