@@ -1,9 +1,8 @@
-
 <!DOCTYPE html>
 <html lang="ru">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Эмоциональное видео — персонализированные ролики</title>
   <style>
     :root {
@@ -13,6 +12,7 @@
       --white: #ffffff;
       --dark: #1a1a1a;
     }
+
     body {
       font-family: Arial, sans-serif;
       margin: 0;
@@ -21,167 +21,77 @@
       color: var(--text);
       line-height: 1.6;
     }
+
     header {
       background: var(--white);
       padding: 15px 0;
       text-align: center;
-      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     }
-    .logo-container img {
-      max-width: 180px;
-      height: auto;
-      display: block;
-      margin: 0 auto;
-    }
-    .logo-text {
-      text-align: center;
-      margin-top: 8px;
-      font-size: 1.1rem;
-      font-weight: bold;
+
+    header h1 {
+      margin: 0;
       color: var(--primary);
     }
-    .hero {
-      position: relative;
-      overflow: hidden;
-    }
-    .hero img {
-      width: 100%;
-      display: block;
-      max-width: 100%;
-      height: auto;
-    }
-    .hero-overlay {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background: rgba(0, 0, 0, 0.4);
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-      color: var(--white);
-      padding: 40px 20px;
-      box-sizing: border-box;
-    }
-    .hero-overlay h1 {
-      font-size: 2.8rem;
-      margin: 0 0 15px 0;
-      line-height: 1.2;
-      text-transform: uppercase;
-      letter-spacing: 1px;
-    }
-    .hero-overlay p {
-      font-size: 1.3rem;
-      margin: 0 0 30px 0;
-      font-weight: 300;
-    }
-    .btn {
-      display: inline-block;
-      background-color: var(--primary);
-      color: var(--white);
-      padding: 16px 32px;
-      text-decoration: none;
-      border-radius: 6px;
-      font-weight: bold;
-      font-size: 1.1rem;
-      transition: background 0.3s, transform 0.2s;
-    }
-    .btn:hover {
-      background-color: #004494;
-      transform: translateY(-2px);
-    }
-    .section {
-      padding: 60px 20px;
-      max-width: 1000px;
-      margin: 0 auto;
-    }
-    .section h2 {
-      text-align: center;
-      margin-bottom: 40px;
-      color: var(--primary);
-    }
+
     .work-card {
       background: var(--white);
-      padding: 25px;
+      margin: 20px;
+      padding: 20px;
       border-radius: 8px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
-      margin-bottom: 30px;
-      border-left: 5px solid var(--primary);
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
     }
-    .work-card h3 {
-      margin-top: 0;
-      color: var(--primary);
-    }
-    .tariff-block {
-      text-align: center;
-    }
-    .tariff-block a {
+
+    .btn {
       display: inline-block;
-      margin-top: 20px;
+      margin-top: 10px;
+      padding: 10px 20px;
+      background-color: var(--primary);
+      color: var(--white);
+      text-decoration: none;
+      border-radius: 5px;
     }
-    footer {
-      background: var(--dark);
-      color: #aaa;
-      padding: 30px 20px;
+
+    .btn:hover {
+      background-color: var(--dark);
+    }
+
+    .section tariffs {
+      padding: 40px 20px;
       text-align: center;
-      font-size: 0.9rem;
     }
-    @media (max-width: 768px) {
-      .hero-overlay h1 { font-size: 2rem; }
-      .hero-overlay p { font-size: 1.1rem; }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: var(--dark);
+      color: var(--white);
+      margin-top: 40px;
     }
   </style>
 </head>
 <body>
   <header>
-    <div class="logo-container">
-      <img src="https://disk.yandex.ru/i/GJrB3Wb5Z0H-_A" alt="Логотип Эмоциональное видео"/>
-    </div>
-    <div class="logo-text">Эмоциональное видео</div>
+    <h1>Эмоциональное видео</h1>
   </header>
 
-  <section class="hero">
-    <img src="https://disk.yandex.ru/i/wPJ5VVh90ab__g" alt="Я создаю видео, которые вызывают эмоции"/>
-    <div class="hero-overlay">
-      <h1>Я создаю видео,<br>которые вызывают эмоции</h1>
-      <p>Ваши идеи. Мои технологии. Незабываемый результат!</p>
-      <a href="https://emotion-vid-form.vercel.app/" class="btn">Заказать видео</a>
-    </div>
-  </section>
-
-  <section class="section portfolio">
-    <h2>Примеры моих работ</h2>
-
+  <section>
     <div class="work-card">
-      <h3>Погружение в фильм «Любовь и голуби»</h3>
-      <p>Интеграция клиента в культовую сцену советского кино. Показываю, как умею сохранять стилистику оригинала и органично вписывать нового персонажа в кадр.</p>
-      <ul>
-        <li>Трекинг лица и перенос мимики с помощью нейросетей.</li>
-        <li>Ручная композиция кадра и цветокоррекция под стилистику фильма.</li>
-        <li>Синхронизация таймингов реплик и настройка глубины резкости.</li>
-      </ul>
-      <a href="https://disk.yandex.ru/i/4N3-dOm4tUbSUQ" target="_blank" rel="noopener noreferrer" class="btn">Посмотреть ролик →</a>
-    </div>
-
-    <div class="work-card">
-      <h3>Липсинк с голосом В. В. Жириновского</h3>
+      <h3>Липсинк с голосом В. В. Жириновского</h3>
       <p>Рекламный ролик с говорящим аватаром и узнаваемым голосом. Демонстрирую работу с TTS, трекингом губ и ручной доводкой.</p>
       <ul>
         <li>Подбор нейросетевого TTS с нужным тембром.</li>
         <li>Трекинг губ и ручная доводка ключевых кадров.</li>
         <li>Добавление субтитров и простой графики для усиления восприятия.</li>
       </ul>
-      <a href="https://disk.yandex.ru/i/XVsx-umc2unrLg" target="_blank" rel="noopener noreferrer" class="btn">Посмотреть ролик →</a>
+      <a href="https://disk.yandex.ru/i/XVsx-umc2unrLg" target="_blank" rel="noopener noreferrer" class="btn">Посмотреть ролик +</a>
     </div>
 
     <div class="work-card">
       <h3>Мальчик и девочка поют на сцене</h3>
       <p>Сборка музыкального ролика из нейросетевых элементов. Показываю, как из разрозненных AI‑компонентов сделать цельный продукт.</p>
       <ul>
-        <li>Стихи, вокал и музыка — сгенерированы нейросетями.</li>
+        <li>Стихи, вокал и музыка — сгенерированы нейросетями.</li>
         <li>Липсинк для двух персонажей: ручная настройка синхронизации губ под трек.</li>
         <li>Монтаж и композиция в CapCut: сцены, переходы, динамика под ритм.</li>
       </ul>
@@ -193,13 +103,14 @@
     <h2>Тарифы и стоимость</h2>
     <div class="tariff-block">
       <p>Подробные условия и цены доступны в файле с тарифами:</p>
-      <a href="https://disk.yandex.ru/i/L6-0BLLnjl2rQQ" target="_blank" rel="noopener noreferrer" class="btn">Скачать файл с тарифами →</a>
+      <a href="https://disk.yandex.ru/i/L6-0BLLnj12rQQ" target="_blank" rel="noopener noreferrer" class="btn">Скачать файл с тарифами +</a>
     </div>
   </section>
 
   <footer>
-    <p>© 2024 Эмоциональное видео. Все права защищены.</p>
+    <p>&copy; 2024 Эмоциональное видео. Все права защищены.</p>
     <p>Для заказа заполните форму: <a href="https://emotion-vid-form.vercel.app/" style="color:#fff; text-decoration:underline;">emotion-vid-form.vercel.app</a></p>
   </footer>
 </body>
 </html>
+
