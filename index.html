@@ -3,121 +3,81 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Леонид Волков — AI-ролики и видеомонтаж</title>
+  <title>Эмоциональное видео</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header>
-    <div class="container header-content">
-      <!-- Блок для логотипа: положите logo.png в корень репозитория -->
-      <div class="logo-wrapper">
-        <img src="logo.png" alt="Логотип Леонида Волкова" class="logo" />
-      </div>
-
-      <h1>Леонид Волков</h1>
-      <p>Персонализированные видеоролики с нейросетями и профессиональным монтажом</p>
-      
-      <div style="text-align: center; margin-top: 24px;">
-        <a href="https://emotion-vid-form.vercel.app/" target="_blank" rel="noopener noreferrer" class="btn btn-large">Заказать видеоролик</a>
+  <header class="hero">
+    <div class="container hero-content">
+      <a href="/" class="logo-link">
+        <img src="logo.png" alt="Логотип Эмоциональное видео" class="logo" />
+      </a>
+      <div class="hero-info">
+        <h1 class="hero-title">Леонид Волков</h1>
+        <p class="hero-subtitle">Персонализированные видеоролики с нейросетями и профессиональным монтажом</p>
+        <a href="https://emotion-vid-form.vercel.app/" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Заказать видеоролик</a>
       </div>
     </div>
   </header>
 
-  <section id="about">
-    <div class="container">
+  <main class="container">
+    <section id="about" class="section">
       <h2>О себе</h2>
       <p>Меня зовут Леонид Волков. Я создаю персонализированные видеоролики с помощью нейросетей и современных инструментов видеопроизводства.</p>
+    </section>
 
-      <h3>Что я делаю?</h3>
+    <section id="services" class="section">
+      <h2>Что я делаю?</h2>
       <ul class="services-list">
         <li>🔹 Погружаю вас в любимые фильмы, сериалы и мультфильмы — станьте частью культовых сцен.</li>
         <li>🔹 Создаю реалистичный липсинк (Lip Sync) — синхронизацию движения губ с речью или песней.</li>
         <li>🔹 Делаю инфографику и анимацию для бизнеса и личных проектов.</li>
         <li>🔹 Пишу стихи, создаю музыку и превращаю идеи в уникальные видеоролики.</li>
       </ul>
-
-      <div style="text-align: center; margin: 40px 0;">
-        <a href="https://emotion-vid-form.vercel.app/" target="_blank" rel="noopener noreferrer" class="btn">Заказать видеоролик</a>
+      
+      <div class="cta-block">
+        <a href="https://emotion-vid-form.vercel.app/" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">Заказать видеоролик</a>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <section id="portfolio">
-    <div class="container">
+    <section id="portfolio" class="section">
       <h2>Примеры работ</h2>
-
       <div class="portfolio-grid">
-        <div class="portfolio-card">
+        <article class="portfolio-card">
           <h3>Липсинк с голосом Жириновского В.В.</h3>
           <p>Реалистичная синхронизация губ под архивную речь. Использованы нейросети для ресинтеза голоса и ручная доводка ключевых кадров.</p>
           <a href="https://disk.yandex.ru/i/XVsx-umc2unrLg" target="_blank" rel="noopener noreferrer" class="link-btn">Смотреть пример</a>
-        </div>
+        </article>
 
-        <div class="portfolio-card">
+        <article class="portfolio-card">
           <h3>Погружение в фильм</h3>
-          <p>Клиент становится героем культовой сцены: генерация кадров в стиле фильма, композитинг, цветокоррекция под референс.</p>
+          <p>Я в фильме "Любовь и голуби". Генерация кадров в стиле фильма, композитинг, цветокоррекция под референс.</p>
           <a href="https://disk.yandex.ru/i/4N3-dOm4tUbSUQ" target="_blank" rel="noopener noreferrer" class="link-btn">Смотреть пример</a>
-        </div>
+        </article>
 
-        <div class="portfolio-card">
+        <article class="portfolio-card">
           <h3>Стихи, вокал, музыка, липсинк и видеомонтаж</h3>
           <p>Полный цикл: написание текста, генерация музыки, запись вокала, липсинк и монтаж под единый стиль проекта.</p>
           <a href="https://disk.yandex.ru/i/h8XkoGeru8q1Rg" target="_blank" rel="noopener noreferrer" class="link-btn">Смотреть пример</a>
+        </article>
+      </div>
+    </section>
+
+    <section id="pricing" class="section">
+      <div class="container">
+        <h2>Стоимость и варианты услуг</h2>
+       
+        <div style="text-align: center; margin-top: 40px;">
+          <a href="https://disk.yandex.ru/i/L6-0BLLnjl2rQQ" target="_blank" rel="noopener noreferrer" class="btn btn-primary">ТАРИФЫ</a>
         </div>
       </div>
-    </div>
-  </section>
-
-  <section id="pricing">
-    <div class="container">
-      <h2>Стоимость и варианты услуг</h2>
-      <p>Выберите подходящий пакет или расскажите о своей задаче — предложу индивидуальное решение.</p>
-
-      <div class="pricing-grid">
-        <div class="pricing-card">
-          <h3>Старт</h3>
-          <p class="price">от 10 000 ₽</p>
-          <ul>
-            <li>Короткий ролик до 30 сек</li>
-            <li>Базовая генерация и монтаж</li>
-            <li>1 круг правок</li>
-          </ul>
-          <a href="https://emotion-vid-form.vercel.app/" target="_blank" rel="noopener noreferrer" class="btn">Заказать</a>
-        </div>
-
-        <div class="pricing-card">
-          <h3>Стандарт</h3>
-          <p class="price">от 15 000 ₽</p>
-          <ul>
-            <li>Ролик 30–60 сек</li>
-            <li>Липсинк базовых сцен</li>
-            <li>2 круга правок</li>
-          </ul>
-          <a href="https://emotion-vid-form.vercel.app/" target="_blank" rel="noopener noreferrer" class="btn">Заказать</a>
-        </div>
-
-        <div class="pricing-card">
-          <h3>Премиум</h3>
-          <p class="price">от 25 000 ₽</p>
-          <ul>
-            <li>Ролик 60–120 сек</li>
-            <li>Полный цикл: сценарий, музыка, липсинк, монтаж</li>
-            <li>3 круга правок, приоритетная очередь</li>
-          </ul>
-          <a href="https://emotion-vid-form.vercel.app/" target="_blank" rel="noopener noreferrer" class="btn">Заказать</a>
-        </div>
-      </div>
-
-      <div style="text-align: center; margin-top: 40px;">
-        <a href="https://disk.yandex.ru/i/L6-0BLLnjl2rQQ" target="_blank" rel="noopener noreferrer" class="link-btn">Посмотреть подробное описание тарифов</a>
-      </div>
-    </div>
-  </section>
+    </section>
+  </main>
 
   <footer>
     <div class="container">
       <p>Леонид Волков — AI-ролики и видеомонтаж</p>
-      <p>Работаю по договору, принимаю оплату на расчётный счёт. Заказы через форму на сайте или в Telegram.</p>
+      
     </div>
   </footer>
 </body>
