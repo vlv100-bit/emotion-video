@@ -1,11 +1,117 @@
-
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="ru">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Эмоциональное видео</title>
   <link rel="stylesheet" href="style.css" />
+  <style>
+    /* Базовые стили */
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+      color: #1e293b;
+      background-color: #ffffff;
+    }
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+    .section {
+      padding: 70px 0;
+    }
+    .hero {
+      padding: 100px 0;
+      text-align: center;
+    }
+
+    /* Стили для кнопок */
+    .btn-inline {
+      display: inline-block;
+      padding: 16px 32px;
+      background-color: #2563eb;
+      color: #ffffff !important;
+      text-decoration: none;
+      border-radius: 12px;
+      font-weight: 600;
+      text-align: center;
+      box-shadow: 0 4px 14px rgba(37, 99, 235, 0.25);
+      transition: all 0.3s ease;
+      border: none;
+      cursor: pointer;
+      font-size: 18px;
+      line-height: 1.3;
+    }
+    .btn-inline:hover {
+      background-color: #1d4ed8;
+      transform: translateY(-2px);
+      box-shadow: 0 8px 20px rgba(37, 99, 235, 0.3);
+    }
+    .btn-inline.secondary {
+      background-color: #f1f5f9;
+      color: #1e293b !important;
+    }
+    .btn-inline.secondary:hover {
+      background-color: #e2e8f0;
+    }
+
+    /* Сетка карточек портфолио */
+    .portfolio-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 30px;
+      margin-top: 30px;
+    }
+    .portfolio-card {
+      border: 1px solid #e2e8f0;
+      padding: 24px;
+      border-radius: 12px;
+      background: #ffffff;
+    }
+
+    /* Блок CTA (кнопки призыва к действию) */
+    .cta-block {
+      margin-top: 40px;
+      text-align: center;
+    }
+
+    /* Стили специально под секцию «Тарифы» как на скриншоте */
+    .pricing-wrapper {
+      text-align: center;
+      padding: 60px 20px;
+      background-color: #ffffff;
+    }
+    .pricing-wrapper .btn-inline {
+      padding: 20px 40px;
+      font-size: 20px;
+      border-radius: 12px;
+    }
+    .pricing-subtitle {
+      margin-top: 24px;
+      font-size: 18px;
+      color: #64748b;
+      font-weight: 400;
+    }
+
+    /* Стили списка услуг */
+    .services-list {
+      list-style: none;
+      padding: 0;
+      margin: 24px 0;
+    }
+    .services-list li {
+      margin-bottom: 12px;
+      display: flex;
+      align-items: flex-start;
+    }
+    .services-list li::before {
+      content: "◆";
+      margin-right: 10px;
+      color: #2563eb;
+      font-weight: bold;
+    }
+  </style>
 </head>
 <body>
   <header class="hero">
@@ -15,8 +121,7 @@
       </a>
       <h1 class="hero-title">Леонид Волков</h1>
       <p class="hero-subtitle">Персонализированные эмоциональные видеоролики</p>
-      <!-- Кнопка заказа: ведёт на форму Vercel -->
-      <a href="https://emotion-vid-form.vercel.app/" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Заказать видеоролик</a>
+      <a href="https://emotion-vid-form.vercel.app/" target="_blank" rel="noopener noreferrer" class="btn-inline">Заказать видеоролик</a>
     </div>
   </header>
 
@@ -34,9 +139,8 @@
         <li>Делаю инфографику и анимацию для бизнеса и личных проектов.</li>
         <li>Пишу стихи, создаю музыку и превращаю идеи в уникальные видеоролики.</li>
       </ul>
-      
       <div class="cta-block">
-        <a href="https://emotion-vid-form.vercel.app/" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">Заказать видеоролик</a>
+        <a href="https://emotion-vid-form.vercel.app/" target="_blank" rel="noopener noreferrer" class="btn-inline">Заказать видеоролик</a>
       </div>
     </section>
 
@@ -46,42 +150,38 @@
         <article class="portfolio-card">
           <h3>Липсинк с голосом Жириновского В.В.</h3>
           <p>Реалистичная синхронизация губ под архивную речь. Использованы нейросети для ресинтеза голоса и ручная доводка ключевых кадров.</p>
-          <!-- Ссылка на Яндекс Диск -->
-          <a href="https://disk.yandex.ru/i/XVsx-umc2unrLg" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">Смотреть пример</a>
+          <a href="https://disk.yandex.ru/i/XVsx-umc2unrLg" target="_blank" rel="noopener noreferrer" class="btn-inline secondary">Смотреть пример</a>
         </article>
         <article class="portfolio-card">
           <h3>Погружение в фильм</h3>
           <p>Я в фильме «Любовь и голуби». Генерация кадров в стиле фильма, композитинг, цветокоррекция под референс.</p>
-          <!-- Ссылка на Яндекс Диск -->
-          <a href="https://disk.yandex.ru/i/4N3-dOm4tUbSUQ" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">Смотреть пример</a>
+          <a href="https://disk.yandex.ru/i/4N3-dOm4tUbSUQ" target="_blank" rel="noopener noreferrer" class="btn-inline secondary">Смотреть пример</a>
         </article>
         <article class="portfolio-card">
           <h3>Стихи, вокал, музыка, липсинк и видеомонтаж</h3>
           <p>Полный цикл: написание текста, генерация музыки, запись вокала, липсинк и монтаж под единый стиль проекта.</p>
-          <!-- Ссылка на Яндекс Диск -->
-          <a href="https://disk.yandex.ru/i/h8XkoGeru8q1Rg" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">Смотреть пример</a>
+          <a href="https://disk.yandex.ru/i/h8XkoGeru8q1Rg" target="_blank" rel="noopener noreferrer" class="btn-inline secondary">Смотреть пример</a>
         </article>
       </div>
-
-      
+      <div class="cta-block">
+        <a href="#pricing" class="btn-inline">Перейти к тарифам</a>
+      </div>
     </section>
 
-    <section id="pricing" class="section">
-     
-      
-      <!-- Крупная кнопка «Тарифы», ведущая на Яндекс Диск -->
-      <div class="cta-block" style="margin-top: 20px; text-align: center;">
-        <a href="https://disk.yandex.ru/i/L6-0BLLnjl2rQQ" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Тарифы</a>
-      </div>
+    <section id="pricing" class="pricing-wrapper">
+      <!-- Кнопка «Тарифы» как на скриншоте -->
+      <a href="https://disk.yandex.ru/i/L6-0BLLnjl2rQQ" target="_blank" rel="noopener noreferrer" class="btn-inline">Тарифы</a>
+      <!-- Подпись под кнопкой как на скриншоте -->
+      <p class="pricing-subtitle">AI‑ролики и видеомонтаж</p>
     </section>
   </main>
 
   <footer>
     <div class="container">
-      <p>AI-ролики и видеомонтаж</p>
+      <p>Леонид Волков — AI‑ролики и видеомонтаж</p>
       
     </div>
   </footer>
 </body>
 </html>
-  
+
